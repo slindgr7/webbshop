@@ -1,12 +1,19 @@
-import { useState } from 'react'
-
-import './App.css'
+import { Outlet } from 'react-router';
+import Header from './components/header/Header.jsx';
+import Footer from './components/footer/Footer.jsx' ;
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
     <>
+    <Header />
+    
+    <main>
+      <Outlet />
+    </main>
+
+    <Footer />
     </>
   )
 }
