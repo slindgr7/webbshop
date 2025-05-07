@@ -1,0 +1,17 @@
+:root {
+    --white-color:rgb(232, 232, 232);
+    --black-color: rgb(29, 29, 29);
+    --beige-color: rgb(101, 86, 42);;
+  }
+
+* {
+    box-sizing: border-box;
+    margin: auto;
+    padding: 0;
+    font-optical-sizing: auto;
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+

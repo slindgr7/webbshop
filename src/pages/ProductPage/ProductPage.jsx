@@ -1,12 +1,9 @@
 import React from 'react'
-
- function ProductPage() {
+import ProductCard from '../../components/products/ProductCard'
+export default function ProductPage() {
   return (
-    <div>
-      
-    </div>
+    <>
+      <ProductCard />
+    </>
   )
 }
-
-
-export default ProductPage
