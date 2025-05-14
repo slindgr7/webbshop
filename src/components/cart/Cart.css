@@ -10,10 +10,38 @@
     align-items: center;
     justify-content: center;
   }
-  
+
+  .cart-item {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem ;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.072);
+    font-size: 1rem;
+
+
+    .product-img {
+        width: 80px;
+        aspect-ratio: 3/3;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .buttons {
+      display: flex;
+
+  }
+
+    .delete-btn {
+      border-style: none;
+      border-radius: 10px;
+        img {
+          width: 12px;
+        }
+    }
+  }
 
   .cart-content {
-    background-color: white;
+    background-color:var(--white-color);
     padding: 2rem;
     border-radius: 10px;
     max-width: 500px;

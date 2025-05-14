@@ -1,0 +1,37 @@
+.edit-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: sans-serif;
+}
+
+.edit-container h2 {
+  font-size: 1.3rem;
+  font-size: clamp(1.3rem, 1.1400000000000001rem + 0.8vw, 2.1rem);
+  font-family: "Chango", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 1px;
+  color: var(--beige-color);
+}
+
+.product-list {
+  margin-top: 2rem;
+}
+
+.product-item {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+}
+
+.product-item img {
+  max-width: 100px;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.product-item h4 {
+  margin: 0.3rem 0;
+}

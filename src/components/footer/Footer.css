@@ -1,0 +1,40 @@
+.footer {
+  overflow: hidden;
+  background-image: url('../../assets/beachtennis.png');
+  background-size: cover;
+  background-position: center;
+  padding: 2rem 1rem;
+  margin: 0 auto;
+  line-height: 1.6;
+  color:white;
+
+    img {
+      width: 20px;
+      margin: 1rem 0.5rem 0rem 0rem;
+    }
+  }
+
+  .footer-logo {
+    font-family: "Chango", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--beige-color);
+    font-size: 1rem;
+    font-size: clamp(1rem, 0.8rem + 1vw, 2rem);
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+
+  .footer-info {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+
+  }
+
+  .footer-end {
+    display: flex;
+    
+    
+  }

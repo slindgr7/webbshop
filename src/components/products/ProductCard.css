@@ -10,12 +10,12 @@ h2 {
 
 
 .product-container {
-    border: 1px solid green;
+    background-color: var(--white-color);
     border-radius: 8px 8px 30px 30px;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    padding: 0.5rem;
+    padding: 2rem;
     margin: 1rem;
     
     
@@ -24,13 +24,8 @@ h2 {
         width: 200px;
         aspect-ratio: 3/3;
         object-fit: cover;
-        border-radius: 5px;
+        border-radius: 20px;
     }
-
-
-
-
-
 
 
 

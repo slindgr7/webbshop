@@ -2,6 +2,8 @@ import React from "react";
 import "./Cart.css";
 import useProductStore from "../../data/store.js";
 import { useCartStore } from "../../data/cartStore.js";
+import deleteImg from '../../assets/delete.png'
+
 
 const Cart = () => {
   // om varukorg är öppen så hämtar den.
@@ -32,18 +34,20 @@ const Cart = () => {
           <>
             {orderedItems.map((item) => (
               <div key={item.id} className="cart-item">
+                <section>
+                <img src={item.img} alt={item.namn} className='product-img' />
                 <p>{item.namn}</p>
-                <p>{item.price} kr/st</p>
-                <p>Antal: {item.quantity}</p>
-                <p>Total: {item.price * item.quantity} kr</p>
+                <p>{item.price}:-</p>
+                </section>
+                <section className="buttons" >
                 <button onClick={() => decreaseQuantity(item.id)}>-</button>
+                <p>{item.quantity}</p>
                 <button onClick={() => increaseQuantity(item.id)}>+</button>
-                <button onClick={() => removeFromCart(item.id)}>Ta bort</button>
-               
+                </section>
+                <button className="delete-btn" onClick={() => removeFromCart(item.id)}> <img src={deleteImg} alt="papperskorg" /> </button>
 
               </div>
             ))}
-            <hr />
             <p><strong>Totalt: {total} kr</strong></p>
           </>
         )}

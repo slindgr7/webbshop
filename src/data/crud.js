@@ -23,12 +23,14 @@ async function getProducts(setProducts) {
 
 async function addProduct(productData, setProducts) {
 	try {
-		const newDoc = await addDoc(productsCollection, productData);
+		const productsCollection = collection(db, 'products');
+		await addDoc(productsCollection, productData);
 		getProducts(setProducts);
 	} catch (error) {
 		console.error('Fail to add product:', error);
 	}
 }
+
 
 async function deleteProduct(productId, setProducts) {
 	try {

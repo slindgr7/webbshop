@@ -1,26 +1,16 @@
-import useProductStore from '../../data/store.js';
-import { useEffect } from 'react';
 import './ProductCard.css';
+import useProductStore from '../../data/store.js';
 
-function ProductCard() {
-  const { products, fetchProducts, addToCart } = useProductStore();
-
-  useEffect(() => {
-    fetchProducts();
-  }, []);
+function ProductCard({ product }) {
+  const { addToCart } = useProductStore();
 
   return (
-    <div>
-      <h2>PRODUKTER</h2>
-      {products.map((p) => (
-        <div className='product-container' key={p.id}>
-          <img src={p.img} alt={p.namn} className='product-img' />
-          <h3>{p.namn}</h3>
-          <p>{p.info}</p>
-          <p>{p.price}:-</p>
-          <button onClick={() => addToCart(p)}>Lägg till i varukorgen</button>
-        </div>
-      ))}
+    <div className="product-container">
+      <img src={product.img} alt={product.namn} className="product-img" />
+      <h3>{product.namn}</h3>
+      <p>{product.info}</p>
+      <p>{product.price}:-</p>
+      <button onClick={() => addToCart(product)}>Lägg till i varukorgen</button>
     </div>
   );
 }

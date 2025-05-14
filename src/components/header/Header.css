@@ -1,74 +1,113 @@
 .header-container {
-    position: relative;
-    height: 35vh;
-    overflow: hidden;
-    background-image: url('../../assets/beachtennis.png');
-    background-size: cover;
-    background-position: center;
-  }
+  position: fixed;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 1rem 0rem; 
+  z-index: 10;
+}
+
   
-  .header-top h1 {
+  .header-top a {
+    letter-spacing: 1px;
     color: var(--beige-color);
-    text-align: center;
-    font-family: "Monoton", sans-serif;
-    font-weight: 600;
-    font-size: 2rem;
-    font-size: clamp(2rem, 1.4rem + 3vw, 5rem);
+    text-decoration: none;
+    font-family: "Chango", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    font-size: clamp(1rem, 0.8rem + 1vw, 2rem);
   }
-  
-  .cart-img {
-    position: fixed;
-    width: 1.6rem;
-    top: 18vh;
-    cursor: pointer;
-    z-index: 100;
-    right: 2vh;
+
+
+.cart-admin-section {
+  background-color: var(--beige-color);
+  padding: 0.3rem 0.7rem;
+  border-radius: 20px;
+  cursor: pointer;
+
+    img {
+      margin: 0rem 0.5rem 0rem 0.5rem;
+      width: 23px;
+    }
+
   }
-  
+
+
   .header-middle {
-    position: absolute;
-    top: 15vh;
-    left: 2vh;
-    gap: 0.3rem;
+    display: flex;
+    gap: 1rem;
     color: white;
     font-weight: 800;
-    text-decoration: underline;
-    font-size: 1rem;
-    font-size: clamp(1rem, 0.9rem + 0.5vw, 1.5rem);
-    cursor: pointer;
-
-    p {
-      margin-bottom: 0.4rem;
-    }
+    font-size: clamp(0.8rem, 0.7rem + 0.5vw, 1.3rem);
   }
-
-
-  .search-img {
-    width: 1rem; 
-     
+  
+  .header-middle p {
+    margin-bottom: 0.5rem;
+    font-weight: 800;
+    transition: color 0.7s ease, transform 1.2s ease;
   }
   
   .header-middle p:hover {
     color: var(--beige-color);
-    font-weight: 800;
-    font-size: 1.2rem;
-  }
-
-  .cart-icon-wrapper {
-    position: relative;
+    transform: scale(1.1);
   }
   
+  .hero-img {
+    width: 100%;
+    height: clamp(250px, 50vw, 800px);
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    display: block;
+  }
+  
+  .cart-img-wrapper {
+    position: relative;
+    display: inline-block;
+  }
+
   .cart-count {
-    position: fixed;
-    right: 2vh;
-    top: 16vh;
-    background-color: var(--beige-color);
+    position: absolute;
+    top: -9px;
+    background-color: var(--white-color);
     color: var(--black-color);
     border-radius: 50%;
     padding: 2px 7px;
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     font-weight: bold;
-    z-index: 999;
   }
   
+section:last-of-type {
+  position: relative;
+
+    p {
+      position: absolute;
+      bottom: 5rem;
+      left: 3rem;
+      font-weight: 500;
+    }
+
+    .search-img {
+      position: absolute;
+      bottom: 5rem;
+      right: 3rem;
+      width: 1.2rem;  
+    }
+
+}
+
+.search-input {
+  position: absolute;
+  bottom: 4.5rem;
+  right: 3rem;
+  margin-left: 2rem;
+  font-size: 0.8rem;
+  font-size: clamp(0.8rem, 0.7200000000000001rem + 0.3999999999999999vw, 1.2rem);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 80vw;
+  max-width: 300px;
+}
   

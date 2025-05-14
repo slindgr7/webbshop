@@ -21,7 +21,7 @@ let router = createHashRouter([
         Component: SignInPage,
       },
       {
-        path: "/admin",
+        path: "/edit",
         Component: EditPage,
       },
     ],
