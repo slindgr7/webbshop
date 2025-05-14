@@ -37,10 +37,11 @@ function ProductPage() {
           <option value="namn-stigande">Namn: A - Ö</option>
         </select>
       </div>
+      
       <h1 className='product-h1'>PRODUKTER</h1>
 
       {kategorier.map((kategori) => (
-        <section key={kategori} id={kategori} className="category-section">
+        <section key={kategori} id={kategori}>
           <h2 className="category-title">{kategori.toUpperCase()}</h2>
           <div className="product-grid">
             {sorted.filter(p => p.kategori === kategori).map((p) => (

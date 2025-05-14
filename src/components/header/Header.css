@@ -45,7 +45,7 @@
   
   .navbar {
     text-decoration: none;
-    color: var(--white-color);
+    color: white;
     font-weight: 800;
     transition: color 0.7s ease, transform 1.2s ease;
   }
@@ -80,7 +80,7 @@
     font-weight: bold;
   }
   
-section:last-of-type {
+.img-search-section {
   position: relative;
 
     p {

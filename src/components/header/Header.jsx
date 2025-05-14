@@ -21,7 +21,7 @@ function Header() {
     <>
       <header className='header-container'>
         <section className='header-top'>
-          <a href="/">fUN&GAMES.</a>
+          <a href="/">FUN&GAMES.</a>
         </section>
         <section className='header-middle'>
           <HashLink className='navbar' smooth to="#kubb">KUBB</HashLink>
@@ -46,7 +46,7 @@ function Header() {
           </HashLink>
         </section>
       </header>
-      <section>
+      <section className='img-search-section' >
         <img className='hero-img' src={heroImg} alt="" />
         <p>it's all fun&games until.....</p>
         <img

@@ -35,7 +35,18 @@
   text-align: center;
   margin: 3rem;
 }
+.category-title {
+  font-weight: bold;
+  text-decoration: underline;
+  text-align: center;
+  letter-spacing: 5px;
+  font-size: 1rem;
+  font-family: "Chango", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--beige-color);
 
+}
 .product-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(270px, 400px));

@@ -28,7 +28,8 @@ import Joi from "joi";
     .required()
     .messages({
       "string.empty": "Bildlänk krävs",
-      "string.uri": "Bildlänken måste börja med https://",
+      "string.uri": "Bildlänken måste vara en giltig URI",
+      "string.uriCustomScheme": "Bildlänken måste börja med https://"
     }),
 
   namn: Joi.string()
