@@ -43,13 +43,14 @@
     font-size: clamp(0.8rem, 0.7rem + 0.5vw, 1.3rem);
   }
   
-  .header-middle p {
-    margin-bottom: 0.5rem;
+  .navbar {
+    text-decoration: none;
+    color: var(--white-color);
     font-weight: 800;
     transition: color 0.7s ease, transform 1.2s ease;
   }
   
-  .header-middle p:hover {
+  .navbar:hover {
     color: var(--beige-color);
     transform: scale(1.1);
   }

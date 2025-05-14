@@ -39,6 +39,7 @@ function AddItem({ form, setForm, onSave, isEditing, setEditItem, setError, setS
         <label>Namn:</label>
         <input name="namn" placeholder="Produktnamn" value={form.namn} onChange={handleChange} />
       </div>
+      
       <div className="form-group">
         <label>Beskrivning:</label>
         <textarea name="info" placeholder="Minst 15 tecken" value={form.info} onChange={handleChange} />
@@ -47,6 +48,7 @@ function AddItem({ form, setForm, onSave, isEditing, setEditItem, setError, setS
         <label>Pris:</label>
         <input name="price" type="number" placeholder="Pris" value={form.price} onChange={handleChange} />
       </div>
+
       <div className="form-group">
         <label>Kategori:</label>
         <select name="kategori" value={form.kategori} onChange={handleChange}>

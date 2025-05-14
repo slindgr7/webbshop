@@ -76,19 +76,19 @@ function Edit() {
         />
       </div>
 
-      <div className="product-list">
-        {products.map((p) => (
-          <div key={p.id} className="product-item">
-            <img src={p.img} alt={p.namn} />
-            <h2>{p.namn}</h2>
-            <p>Kategori: {p.kategori}</p>
-            <p>{p.info}</p>
-            <p>{p.price} :-</p>
-            <section>
-            <button onClick={() => handleEdit(p)}>Ändra</button>
-            <button onClick={() => deleteProduct(p.id)}>Ta bort</button>
-            </section>
-          </div>
+        <div className="product-list">
+          {products.map((p) => (
+            <div key={p.id} className="product-item">
+              <img src={p.img} alt={p.namn} />
+              <h2>{p.namn}</h2>
+              <p>Kategori: {p.kategori}</p>
+              <p>{p.info}</p>
+              <p>{p.price} :-</p>
+              <section>
+              <button onClick={() => handleEdit(p)}>Ändra</button>
+              <button onClick={() => deleteProduct(p.id)}>Ta bort</button>
+              </section>
+        </div>
         ))}
       </div>
     </div>
