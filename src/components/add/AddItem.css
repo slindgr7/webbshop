@@ -51,9 +51,38 @@
     border-radius: 5px;
   }
   
-  .button:hover {
-    opacity: 0.9;
-  }
+ .edit-buttons {
+    display: flex;
+    justify-content: space-between;
+    
+    button:first-of-type {
+      margin-top: auto;
+      padding: 0.8rem 1.2rem;
+      background-color: var(--beige-color);
+      color: white;
+      border: none;
+      font-weight: 600;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+
+    button:nth-of-type(2) {
+      background-color: var(--white-color);
+      padding: 0.8rem 1.2rem;
+      border: none;
+      font-weight: 600;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+
+    button:hover {
+      background-color: #a18f6b;
+    }
+
+
+ }
   
   p.error {
     color: red;
@@ -64,3 +93,4 @@
     color: green;
     margin-top: 0.5rem;
   }
+

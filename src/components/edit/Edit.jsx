@@ -59,7 +59,7 @@ function Edit() {
       <h3>Redigera produkter</h3>
 
       {localStorage.getItem("isLoggedIn") === "true" && (
-        <button type="button" className="edit-page-button" onClick={handleLogout}>Logga ut</button>
+        <button type="button" className="logout-btn" onClick={handleLogout}>Logga ut</button>
       )}
 
       <div ref={formRef}>
@@ -84,8 +84,10 @@ function Edit() {
             <p>Kategori: {p.kategori}</p>
             <p>{p.info}</p>
             <p>{p.price} :-</p>
-            <button className="edit-page-button" onClick={() => handleEdit(p)}>Ändra</button>
-            <button className="edit-page-button" onClick={() => deleteProduct(p.id)}>Ta bort</button>
+            <section>
+            <button onClick={() => handleEdit(p)}>Ändra</button>
+            <button onClick={() => deleteProduct(p.id)}>Ta bort</button>
+            </section>
           </div>
         ))}
       </div>
