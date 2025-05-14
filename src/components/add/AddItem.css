@@ -87,7 +87,7 @@
   p.error {
     width: max-content;
     font-size: 0.8rem;
-    padding: 0.7rem;
+    padding: 0.5rem;
     border-radius: 10px;
     font-weight: bold;
     border: 1px solid rgba(233, 48, 48, 0.493);
@@ -97,7 +97,8 @@
   
   p.success {
     width: max-content;
-    padding: 1rem;
+    font-size: 0.8rem;
+    padding: 0.5rem;
     border-radius: 10px;
     font-weight: bold;
     border: 1px solid rgba(94, 189, 73, 0.493);

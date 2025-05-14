@@ -23,9 +23,13 @@ const Cart = () => {
     0
   );
 
+
   return (
+
     <div className="cart-overlay" onClick={closeCart}>
+
       <div className="cart-content" onClick={(e) => e.stopPropagation()}>
+
         <h2>Din varukorg</h2>
 
         {orderedItems.length === 0 ? (
@@ -34,20 +38,23 @@ const Cart = () => {
           <>
             {orderedItems.map((item) => (
               <div key={item.id} className="cart-item">
-                <section>
                 <img src={item.img} alt={item.namn} className='product-img' />
+
+                <section className='name-price-section' >
                 <p>{item.namn}</p>
                 <p>{item.price}:-</p>
                 </section>
+
                 <section className="buttons" >
                 <button onClick={() => decreaseQuantity(item.id)}>-</button>
                 <p>{item.quantity}</p>
                 <button onClick={() => increaseQuantity(item.id)}>+</button>
                 </section>
-                <button className="delete-btn" onClick={() => removeFromCart(item.id)}> <img src={deleteImg} alt="papperskorg" /> </button>
 
+                <button className="delete-btn" onClick={() => removeFromCart(item.id)}> <img src={deleteImg} alt="papperskorg" /> </button>
               </div>
             ))}
+
             <p><strong>Totalt: {total} kr</strong></p>
           </>
         )}

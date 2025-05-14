@@ -1,10 +1,8 @@
 .footer {
-  overflow: hidden;
-  background-image: url('../../assets/beachtennis.png');
-  background-size: cover;
-  background-position: center;
+  background-color: rgb(29, 29, 29);
   padding: 2rem 1rem;
   margin: 0 auto;
+  margin-top: 3rem;
   line-height: 1.6;
   color:white;
 
@@ -18,7 +16,7 @@
     font-family: "Chango", sans-serif;
     font-weight: 400;
     font-style: normal;
-    color: var(--beige-color);
+    color: var(--white-color);
     font-size: 1rem;
     font-size: clamp(1rem, 0.8rem + 1vw, 2rem);
     letter-spacing: 1px;
