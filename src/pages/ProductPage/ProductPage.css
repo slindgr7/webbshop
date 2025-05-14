@@ -60,22 +60,4 @@
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
 }
 
-.product-img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 1rem;
-}
-
-.product-container h3 {
-  font-size: 1.1rem;
-  margin: 0.5rem 0;
-  font-weight: 600;
-}
-
-.product-container p {
-  font-size: 0.9rem;
-  color: #555;
-  margin-bottom: 0.3rem;
-}
 

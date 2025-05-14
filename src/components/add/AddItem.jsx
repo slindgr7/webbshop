@@ -29,7 +29,7 @@ function AddItem({ form, setForm, onSave, isEditing, setEditItem, setError, setS
 
   return (
     <form ref={formRef} onSubmit={handleSubmit} className="add-form">
-      <h3>{isEditing ? 'Redigera produkt' : 'Lägg till ny produkt'}</h3>
+      <h3 className='form-h2' >{isEditing ? 'Redigera produkt' : 'Lägg till ny produkt'}</h3>
 
       <div className="form-group">
         <label>Bildlänk:</label>

@@ -56,7 +56,7 @@ function Edit() {
 
   return (
     <div className="edit-container">
-      <h2>Redigera produkter</h2>
+      <h3>Redigera produkter</h3>
 
       {localStorage.getItem("isLoggedIn") === "true" && (
         <button type="button" className="edit-page-button" onClick={handleLogout}>Logga ut</button>
@@ -80,10 +80,10 @@ function Edit() {
         {products.map((p) => (
           <div key={p.id} className="product-item">
             <img src={p.img} alt={p.namn} />
-            <h4>{p.namn}</h4>
+            <h2>{p.namn}</h2>
+            <p>Kategori: {p.kategori}</p>
             <p>{p.info}</p>
             <p>{p.price} :-</p>
-            <p>Kategori: {p.kategori}</p>
             <button className="edit-page-button" onClick={() => handleEdit(p)}>Ändra</button>
             <button className="edit-page-button" onClick={() => deleteProduct(p.id)}>Ta bort</button>
           </div>
