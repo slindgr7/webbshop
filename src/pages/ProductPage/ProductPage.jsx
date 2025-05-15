@@ -26,7 +26,6 @@ function ProductPage() {
     <>
       <div className="sort-container">
         <select
-          id="sortering"
           className="sort-dropdown"
           value={sortBy}
           onChange={(e) => setSortBy(e.target.value)}
@@ -41,13 +40,16 @@ function ProductPage() {
       <h1 className='product-h1'>PRODUKTER</h1>
 
       {kategorier.map((kategori) => (
+
         <section key={kategori} id={kategori}>
           <h2 className="category-title">{kategori.toUpperCase()}</h2>
+          
           <div className="product-grid">
             {sorted.filter(p => p.kategori === kategori).map((p) => (
               <ProductCard key={p.id} product={p} />
             ))}
           </div>
+
         </section>
       ))}
     </>
