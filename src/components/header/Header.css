@@ -39,6 +39,7 @@
   .header-middle {
     display: flex;
     gap: 1rem;
+    padding: 0rem 0.3rem;
     color: white;
     font-weight: 800;
     font-size: 0.8rem;
