@@ -52,14 +52,13 @@ function Header() {
       <section className='img-search-section' >
         <img className='hero-img' src={heroImg} alt="" />
         
-        <p>it's all fun&games until.....</p>
+        <p className='slogan' >it's all fun&games until.....</p>
 
-        <img
-          className='search-img'
-          src={searchImg}
-          alt="förstoringsglas"
-          onClick={() => setShowSearch(prev => !prev)}
-        />
+        <p className='search' onClick={() => setShowSearch(prev => !prev)}>
+            sök..
+        </p>
+          
+        
 
         {showSearch && (
           <input
