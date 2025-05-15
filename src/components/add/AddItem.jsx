@@ -64,7 +64,6 @@ function AddItem({ form, setForm, onSave, isEditing, setEditItem, setError, setS
           placeholder="https://..."
           value={form.img}
           onChange={handleChange}
-          className={error.img ? 'error-border' : ''}
         />
         {error.img && <p className="error">{error.img}</p>}
       </div>
@@ -76,7 +75,6 @@ function AddItem({ form, setForm, onSave, isEditing, setEditItem, setError, setS
           placeholder="Produktnamn"
           value={form.namn}
           onChange={handleChange}
-          className={error.namn ? 'error-border' : ''}
         />
         {error.namn && <p className="error">{error.namn}</p>}
       </div>
@@ -88,7 +86,6 @@ function AddItem({ form, setForm, onSave, isEditing, setEditItem, setError, setS
           placeholder="Minst 15 tecken"
           value={form.info}
           onChange={handleChange}
-          className={error.info ? 'error-border' : ''}
         />
         {error.info && <p className="error">{error.info}</p>}
       </div>
@@ -101,7 +98,6 @@ function AddItem({ form, setForm, onSave, isEditing, setEditItem, setError, setS
           placeholder="Pris"
           value={form.price}
           onChange={handleChange}
-          className={error.price ? 'error-border' : ''}
         />
         {error.price && <p className="error">{error.price}</p>}
       </div>
@@ -112,7 +108,6 @@ function AddItem({ form, setForm, onSave, isEditing, setEditItem, setError, setS
           name="kategori"
           value={form.kategori}
           onChange={handleChange}
-          className={error.kategori ? 'error-border' : ''}
         >
           <option value="">Välj kategori</option>
           <option value="kubb">Kubb</option>
