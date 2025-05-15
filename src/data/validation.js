@@ -27,7 +27,7 @@ import Joi from "joi";
     .uri({ scheme: ["https"] })
     .required()
     .messages({
-      "string.empty": "Bildlänk krävs",
+      "string.empty": "Skriv en bildlänk",
       "string.uri": "Bildlänken måste vara en giltig URI",
       "string.uriCustomScheme": "Bildlänken måste börja med https://"
     }),
@@ -36,7 +36,7 @@ import Joi from "joi";
     .min(3)
     .required()
     .messages({
-      "string.empty": "Namn krävs",
+      "string.empty": "Skriv ett namn",
       "string.min": "Namn måste ha minst 3 bokstäver",
     }),
 
@@ -44,7 +44,7 @@ import Joi from "joi";
     .min(15)
     .required()
     .messages({
-      "string.empty": "Beskrivning krävs",
+      "string.empty": "skriv en beskrivning",
       "string.min": "Beskrivningen måste vara minst 15 tecken",
     }),
 
@@ -61,7 +61,7 @@ import Joi from "joi";
     .required()
     .messages({
       "any.only": "Välj en giltig kategori",
-      "string.empty": "Kategori krävs",
+      "string.empty": "Välj en kategori",
     }),
 });
 
