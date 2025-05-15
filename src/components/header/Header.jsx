@@ -23,12 +23,14 @@ function Header() {
         <section className='header-top'>
           <a href="/">FUN&GAMES.</a>
         </section>
+
         <section className='header-middle'>
           <HashLink className='navbar' smooth to="#kubb">KUBB</HashLink>
           <HashLink className='navbar' smooth to="#racketspel">RACKETSPEL</HashLink>
           <HashLink className='navbar' smooth to="#bollspel">BOLLSPEL</HashLink>
           <HashLink className='navbar' smooth to="#övrigt">ÖVRIGT</HashLink>
         </section>
+
         <section className='cart-admin-section'>
           <div className="cart-img-wrapper">
             {totalQuantity > 0 && (
@@ -46,15 +48,19 @@ function Header() {
           </HashLink>
         </section>
       </header>
+      
       <section className='img-search-section' >
         <img className='hero-img' src={heroImg} alt="" />
+        
         <p>it's all fun&games until.....</p>
+
         <img
           className='search-img'
           src={searchImg}
           alt="förstoringsglas"
           onClick={() => setShowSearch(prev => !prev)}
         />
+
         {showSearch && (
           <input
             className="search-input"
@@ -64,6 +70,7 @@ function Header() {
             autoFocus
             onBlur={() => setShowSearch(false)}
           />
+
         )}
       </section>
       <Cart />

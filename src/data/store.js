@@ -8,22 +8,6 @@ const useProductStore = create((set, get) => ({
 	products: [],
 	orderedItems: [],
 	
-	// Filtrering av produkter
-	currentSearchText: '',
-	updateSearchText: (text) => set({ currentSearchText: text }),
-	filteredProducts: () => {
-		const { products, currentSearchText } = get();
-		const search = currentSearchText.toLowerCase();
-		return products.filter(p =>
-		p.namn?.toLowerCase().includes(search) ||
-		p.kategori?.toLowerCase().includes(search)
-		);
-	}, 
-
-	//Sorterings-dropdown
-	sortBy: '',
-	setSortBy: (value) => set({ sortBy: value }),
-
 	//hämta produkt från databas. Lägg i låda products.
     fetchProducts: async () => {
 		await getProducts((products) => set({ products }));
@@ -101,6 +85,27 @@ const useProductStore = create((set, get) => ({
 		// Uppdatera varukorgen med den nya listan
 		set({ orderedItems: remainingItems });
 	},
+
+		// Filtrering av produkter
+		currentSearchText: '',
+		
+		updateSearchText: (text) => set({ currentSearchText: text }),
+	
+		filteredProducts: () => {
+	
+			const { products, currentSearchText } = get();
+			const search = currentSearchText.toLowerCase();
+			
+			return products.filter(p =>
+			p.namn?.toLowerCase().includes(search) ||
+			p.kategori?.toLowerCase().includes(search)
+			);
+		}, 
+	
+		
+		//Sorterings-dropdown
+		sortBy: '',
+		setSortBy: (value) => set({ sortBy: value }),
 
 
 
