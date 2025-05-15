@@ -11,14 +11,24 @@ function Footer() {
   return (
     <footer className="footer">
         <p className="footer-logo">FUN&GAMES</p>
+
         <section className='footer-info' >
-          <p><img className="map-icon" src={mapImg} alt="kart-ikon" />Kungstorget 12</p>
-          <p><img className="telefon-ikon" src={phoneImg} alt="phone-icon" />031 - 46 78 98</p>
+          
           <p>
-        <img src={facebookImg} alt="facebook-ikon" />
-        <img src={instagramImg} alt="instagram-ikon" />
-        <img src={youtubeImg} alt="youtube-ikon" />
-        </p>
+            <img className="kart-ikon" src={mapImg} alt="kart-ikon" />
+            Kungstorget 12
+          </p>
+
+          <p>
+            <img className="telefon-ikon" src={phoneImg} alt="phone-icon" />
+            031 - 46 78 98
+          </p>
+
+          <p className='icons' >
+            <img src={facebookImg} alt="facebook-ikon" />
+            <img src={instagramImg} alt="instagram-ikon" />
+            <img src={youtubeImg} alt="youtube-ikon" />
+          </p>
         </section>
 
 
