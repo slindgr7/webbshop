@@ -54,8 +54,10 @@ const Cart = () => {
                 <button className="delete-btn" onClick={() => removeFromCart(item.id)}> <img src={deleteImg} alt="papperskorg" /> </button>
               </div>
             ))}
-
-            <p><strong>Totalt: {total} kr</strong></p>
+            <section className="cart-end" >
+            <p>Totalt:</p>
+            <p className="total-price" >{total}:-</p>
+            </section>
           </>
         )}
       </div>

@@ -5,7 +5,7 @@
   padding: 2rem;
   font-family: sans-serif;
 
-  h3 {
+  h1 {
       text-align: center;
       font-size: 1.3rem;
       font-size: clamp(1.3rem, 1.1400000000000001rem + 0.8vw, 2.1rem);
@@ -41,24 +41,23 @@
 }
 
 .product-list {
+  width: 100%;
   margin-top: 2rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(270px, 400px));
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
   justify-content: center;
   gap: 2rem;
-
 }
 
 .product-item {
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  overflow: hidden;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  padding: 1rem;
+  background-color: var(--white-color);
+  border-radius: 8px 8px 30px 30px;
   display: flex;
   flex-direction: column;
-  text-align: center;
+  gap: 0.5rem;
+  padding: 2rem;
+  margin: 1rem;
+  
 
   &:hover {
     transform: translateY(-4px);
@@ -77,10 +76,14 @@
     color: #555;
     margin-bottom: 0.3rem;
   }
+  
+  .edit-btn {
+    display: flex;
+    width: 100%;
+    
+  }
 
   button:first-of-type {
-    margin-top: auto;
-    margin: 1rem 3rem;
     padding: 0.8rem 1.2rem;
     background-color: var(--beige-color);
     color: white;
@@ -92,7 +95,6 @@
   }
 
   button:nth-of-type(2) {
-    margin: 1rem 3rem;
     background-color: var(--white-color);
     padding: 0.8rem 1.2rem;
     border: none;

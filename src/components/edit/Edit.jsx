@@ -56,7 +56,7 @@ function Edit() {
 
   return (
     <div className="edit-container">
-      <h3>Redigera produkter</h3>
+      <h1>Redigera produkter</h1>
 
       {localStorage.getItem("isLoggedIn") === "true" && (
         <button type="button" className="logout-btn" onClick={handleLogout}>Logga ut</button>
@@ -84,7 +84,7 @@ function Edit() {
               <p>Kategori: {p.kategori}</p>
               <p>{p.info}</p>
               <p>{p.price} :-</p>
-              <section>
+              <section className='edit-btn' >
               <button onClick={() => handleEdit(p)}>Ändra</button>
               <button onClick={() => deleteProduct(p.id)}>Ta bort</button>
               </section>
